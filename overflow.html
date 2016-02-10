@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      .box {
+        background-color: orange;
+        padding: 20px;
+        font-size: 18px;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .overflow-scroll {
+        overflow: scroll;
+      }
+      .overflow-auto {
+        overflow: auto;
+      }
+  
+      .overflow-hidden,
+      .overflow-scroll,
+      .overflow-auto {
+        padding: 20px;
+      }
+      .define-width-height {
+        width: 1000px;
+        height: 100px;
+        background-color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="padded-row">
+        <h2 class="title center-text">Overflow Hidden</h2>
+        
+        <div class="define-width-height overflow-hidden">
+          A 1000px x 100px div
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+        </div>
+
+        <p>A scrollbar will never exist</p>
+      </div>
+
+      <div class="padded-row">
+        <h2 class="title center-text">Overflow Scroll</h2>
+        
+        <div class="define-width-height overflow-scroll">
+          A 1000px x 100px div
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+        </div>
+
+        <p>In general a scrollbar will exist. Browsers might just do whatever they want to do.</p>
+      </div>
+
+      <div class="padded-row">
+        <h2 class="title center-text">Overflow Auto</h2>
+        
+        <div class="define-width-height overflow-auto">
+          A 1000px x 100px div
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam veritatis dolores maxime laborum officiis maiores, cupiditate temporibus ab alias sed facere tenetur fuga, incidunt accusamus reiciendis nobis? Voluptates, ipsa, soluta.
+          </p>
+        </div>
+
+        <p>A scrollbar will exist if the container clips the content</p>
+      </div>
+
+    </div>
+
+  
+
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.1.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+  </body>
+</html>

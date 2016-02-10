@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h2 class="title center-text">Absolute Positioning</h2>
+      
+      <h4>Coordinate System</h4>
+      <div class="abs-bounding-box">
+        <div class="abs-box"></div>
+      </div>
+
+      <p>Absolutely positioned elements base their position off the nearest relatively or absolutely positioned parent.</p>
+      
+      <hr>
+
+      <h4>50% 50%</h4>
+      <div class="abs-bounding-box">
+        <div class="abs-box middle"></div>
+      </div>
+
+      <p>When a style of top: 50% left: 50% is applied we can see the top left corner of the box being dead center of its parent. Notice that the center of the box is not aligned with the center of its parent.</p>
+
+      <hr>
+
+      <h4>Dead Center</h4>
+      <div class="abs-bounding-box rotate">
+        <div class="abs-box center"></div>
+      </div>
+
+      <p>If we want the center of the box to be dead center of its parent we will need to offset it by half of its width and height. ( here I'm using the css function calc() to achieve this. ex. calc(50% - 50px) )</p>
+    
+  
+
+      <h2 class="title center-text">Relative Positioning</h2>
+  
+      <div class="relative-bounding-box">
+        <div class="relative-box first-relative-box"></div>
+        <div class="relative-box"></div>
+      </div>
+      
+  
+      <p>The first box is relatively positioned. Notice how the second box displays in the flow of the page and is not effected by the first box.</p>
+      <p>Change the positiong of the boxes to absolute using Chrome Dev tools to get a better understanding of the differences.</p>
+
+
+      <h2 class="title center-text"><a href="fixed.html">Fixed Positioning</a></h2>
+
+    </div>
+
+   
+    
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>  
+    <script src="js/main.js"></script>
+
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.1.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+  </body>
+</html>

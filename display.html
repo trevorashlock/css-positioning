@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      .box {
+        background-color: orange;
+        padding: 20px;
+        font-size: 18px;
+      }
+
+      .block {
+        display: block;
+      }
+
+      .inline {
+        display: inline;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .none {
+        display: none;
+      }
+
+      .define-width-height {
+        width: 130px;
+        height: 130px;
+        background-color: gray;
+      }
+
+      .min-max {
+        min-height: 300px;
+        max-width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="padded-row">
+        <h2 class="title center-text">Display Block</h2>
+        
+        <div class="box">A div with 20px padding and display block (default display)</div>
+        <div class="box">A div with 20px padding and display block (default display)</div>
+      </div>
+
+      <div class="padded-row">
+        <h2 class="title center-text">Display Inline</h2>
+        <div class="box inline">A div with 20px padding and display inline</div>
+        <div class="box inline">A div with 20px padding and display inline</div>
+      </div>
+
+      <div class="padded-row">
+        <h2 class="title center-text">Display Inline Block</h2>
+        <div class="box inline-block">A div with 20px padding and display inline-block</div>
+        <div class="box inline-block">A div with 20px padding and display inline-block</div>
+
+        <p>Using inline vs inline-block in a section of text</p>
+
+        <hr>
+
+        <p>Lorem ipsum dolor sit amet, 
+            <span class="inline-block define-width-height">consectetur adipisicing</span> 
+            elit. Temporibus illum voluptas quas numquam debitis nam 
+            <span class="define-width-height">repellendus quasi eum necessitatibus optio.</span> 
+            <a href="" class="block">A link</a>
+            Suscipit provident quia quasi animi, et veniam repellendus minima fuga!
+        </p>
+
+        <hr>
+      </div>
+
+      <div class="padded-row">
+        <h2 class="title center-text">Display Inline Block</h2>
+        <p>The box below this line of text has a display of none.</p>
+        <div class="box none">Display None</div>
+      </div>
+      
+
+
+      <div class="padded-row">
+        <h2 class="title center-text">Flex Box (aka the new hotness</h2>
+        <div class="flex-layout-row">
+            <div class="box">A div with 20px padding</div>
+            <div class="box">A div with 20px padding</div>
+            <div class="box">A div with 20px padding</div>
+        </div>
+      </div>
+
+
+      <div class="padded-row">
+        <h2 class="title center-text">Min/Max Height/Width</h2>
+
+        <div class="box min-max">
+          <p>Min Height of 200px, Max Width of 500px</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsa vero itaque quo sed quam voluptates, quas mollitia, labore nemo optio laudantium officia debitis iusto incidunt facere aut, quasi consequatur?
+          </p>
+        </div>
+      </div>
+      
+      
+    </div>
+
+  
+
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.1.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+  </body>
+</html>
